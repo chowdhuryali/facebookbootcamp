@@ -14,6 +14,7 @@
     <module>CNN</module>
     <module>Ebay</module>
     <module>Bestbuy</module>
+      <module>FacebookModule</module>
   </modules>
 
   <name>Web-Automation-Framework</name>

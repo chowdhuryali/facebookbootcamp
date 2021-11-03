@@ -8,17 +8,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Amazon" />
         <module name="Bestbuy" />
-        <module name="CNN" />
-        <module name="Ebay" />
+        <module name="Facebook" />
         <module name="Generic" />
+        <module name="Geico" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Amazon" target="8" />
-      <module name="Bestbuy" target="1.7" />
-      <module name="CNN" target="1.7" />
-      <module name="Ebay" target="1.7" />
-      <module name="Generic" target="8" />
+      <module name="FacebookModule" target="1.7" />
       <module name="Web-Automation-Framework" target="1.7" />
     </bytecodeTargetLevel>
   </component>
