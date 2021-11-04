@@ -25,16 +25,10 @@ public class AmazonTesting {
         driver.manage().window().maximize();
 
 
-
-
-
-        driver.close();
+       driver.close();
 
 
     }
-
-
-
 
     @After
     public void after () {
