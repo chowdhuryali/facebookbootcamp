@@ -20,11 +20,9 @@ public class GeicoTesting {
         System.setProperty("webdriver.chrome.driver", "/Users/chowdhuryahmed/IdeaProjects/Web-Automation-Framework3/Generic/drivers/chromedriver");
 
         driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
-        //Open Geico website
         driver.get("https://www.geico.com/");
-        //Maximize the homepage
         driver.manage().window().maximize();
 
         //Click on checkbox selecting Auto insurance service
@@ -55,6 +53,7 @@ public class GeicoTesting {
         driver.findElement(By.xpath("/html/body/div[1]/div[2]/main/div/section/div/div/div/form/div[3]/div/input")).sendKeys("Ahmed");
         Thread.sleep(3000);
 
+        //Exit the browser
         driver.close();
     }
 
