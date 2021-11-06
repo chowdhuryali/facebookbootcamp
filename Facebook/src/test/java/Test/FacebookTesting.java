@@ -10,16 +10,18 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
+import java.util.concurrent.TimeUnit;
 
-    public class FacebookTesting extends CommonAPI {
+
+public class FacebookTesting extends CommonAPI {
     WebDriver driver;
 
     @Before
     public void before() {
 
-        System.setProperty("webdriver.chrome.driver", "/Users/alichowdhury/IdeaProjects/WebAutomationFramework/driver/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/Users/jawadsyed/IdeaProjects/web-automation-framework/Generic/drivers/chromedriver");
         driver = new ChromeDriver();
-        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
         driver.get("https://www.facebook.com");
         driver.manage().window().maximize();
     }

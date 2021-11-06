@@ -1,3 +1,5 @@
+package test;
+
 import base.CommonAPI;
 import org.junit.After;
 import org.junit.Before;
@@ -14,8 +16,8 @@ public class GeicoTesting{
     public WebDriver driver;
 
     @Before
-
     @Test
+
     public void Upset() throws InterruptedException {
         System.setProperty("webdriver.chrome.driver", "/Users/jawadsyed/IdeaProjects/web-automation-framework/Generic/drivers/chromedriver");
         driver = new ChromeDriver();
@@ -23,6 +25,7 @@ public class GeicoTesting{
 
         driver.get("https://www.geico.com/");
         driver.manage().window().maximize();
+
 
         driver.findElement(By.xpath("//div[@data-product='auto']")).click();
         Thread.sleep(3000);
@@ -45,8 +48,10 @@ public class GeicoTesting{
         driver.findElement(By.xpath("/html/body/div[1]/div[2]/main/div/section/div/div/div/form/div[3]/div/input")).sendKeys("Ahmed");
         Thread.sleep(3000);
 
-        driver.close();
+        //driver.close();
+
     }
+
 
     @After
     public void after () {
