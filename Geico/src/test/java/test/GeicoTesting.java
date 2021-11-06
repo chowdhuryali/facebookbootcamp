@@ -1,5 +1,4 @@
-package test;
-
+import base.CommonAPI;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -7,9 +6,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+
 import java.util.concurrent.TimeUnit;
 
-public class GeicoTesting {
+public class GeicoTesting{
 
     public WebDriver driver;
 
@@ -17,10 +17,10 @@ public class GeicoTesting {
 
     @Test
     public void Upset() throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver", "/Users/chowdhuryahmed/IdeaProjects/Web-Automation-Framework3/Generic/drivers/chromedriver");
-
+        System.setProperty("webdriver.chrome.driver", "/Users/jawadsyed/IdeaProjects/web-automation-framework/Generic/drivers/chromedriver");
         driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+
         driver.get("https://www.geico.com/");
         driver.manage().window().maximize();
 
