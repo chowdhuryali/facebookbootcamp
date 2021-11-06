@@ -25,6 +25,7 @@ public class AmazonTesting {
         driver.findElement(By.id("nav-link-accountList-nav-line-1")).click();
         Thread.sleep(3000);
 
+<<<<<<< HEAD
         driver.findElement(By.xpath("/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div[1]/form/div/div/div/div[1]/input[1]")).sendKeys("rtouahri2000@yahoo.com");
         Thread.sleep(3000);
 
@@ -40,5 +41,15 @@ public class AmazonTesting {
         driver.close();
 
 
+=======
+       driver.close();
+
+
+    }
+
+    @After
+    public void after () {
+        driver.quit();
+>>>>>>> e2729790badf6e5d8c0f2e9bb1f8a656c364fab3
     }
 }
