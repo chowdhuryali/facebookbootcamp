@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "https://testng/testng-1.0.dtd">
+<suite name="BestBuy Automation Scipt" parallel="false">
+
+
+    <!--   insert username and access key on line 38-39 in CommonAPI-->
+<!--  These are all for browserstack, change the value true to use-->
+
+<!--    <parameter name="useCloudEnv" value="false"/>-->
+<!--    <parameter name="cloudEnvName" value="browserstack"/>-->
+<!--    <parameter name="os_version" value="10"/>-->
+<!--    <parameter name="browserVersion" value="94"/>-->
+
+
+<!--    these parameter are used from commonAPI-->
+
+    <parameter name="os" value="OS X"/>
+    <parameter name="browserName" value="chrome"/>
+    <parameter name="url" value="https://www.BestBuy.com"/>
+
+
+<!--            These test anc class used to test multiple tests-->
+
+    <test name = "smoke Amazon search">
+        <classes>
+
+            <class name="Test.BestBuyTesting"/>
+        </classes>
+    </test>
+</suite>

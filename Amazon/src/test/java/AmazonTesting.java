@@ -1,31 +1,38 @@
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+import base.CommonAPI;
+
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import java.util.concurrent.TimeUnit;
-
-public class AmazonTesting {
+import org.testng.annotations.Test;
 
 
-    public WebDriver driver;
+public class AmazonTesting extends CommonAPI {
 
-    @Before
+
+//    public WebDriver driver;
+//    static String website = "https://www.Amazon.com/";
+//
+//    @Before
+//
+//    public void Upset() throws InterruptedException {
+//        System.setProperty("webdriver.chrome.driver", "/Users/jawadsyed/IdeaProjects/web-automation-framework/Generic/drivers/chromedriver");
+//
+//        driver = new ChromeDriver();
+//        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+//        driver.get(website);
+//        driver.manage().window().maximize();
+//
+//
+//    }
+
+
     @Test
 
-    public void Upset() throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\rtoua\\IdeaProjects\\Web-Automation-Framework3\\Generic\\drivers\\chromedriver.exe");
+    public void Upseet() throws InterruptedException {
 
-        driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-        driver.get("https://www.amazon.com/");
-        driver.manage().window().maximize();
 
         driver.findElement(By.id("nav-link-accountList-nav-line-1")).click();
         Thread.sleep(3000);
 
-<<<<<<< HEAD
+
         driver.findElement(By.xpath("/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div[1]/form/div/div/div/div[1]/input[1]")).sendKeys("rtouahri2000@yahoo.com");
         Thread.sleep(3000);
 
@@ -38,18 +45,18 @@ public class AmazonTesting {
         driver.findElement(By.xpath("/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div/form/div/div[2]/span/span/input")).click();
         Thread.sleep(3000);
 
-        driver.close();
-
-
-=======
-       driver.close();
-
 
     }
 
-    @After
-    public void after () {
-        driver.quit();
->>>>>>> e2729790badf6e5d8c0f2e9bb1f8a656c364fab3
+
+//        @After
+//        public void after(){
+//        driver.quit();
+//        }
+
     }
-}
+
+
+
+
+

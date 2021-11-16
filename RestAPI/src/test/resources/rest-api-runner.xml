@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "https://testng/testng-1.0.dtd">
+<suite name="Rest Assure Automation Scipt" parallel="false">
+
+    <!--cloud parameters-->
+<!--    <parameter name="useCloudEnv" value="false"/>-->
+<!--    <parameter name="cloudEnvName" value="browserstack"/>-->
+<!--    <parameter name="os_version" value="10"/>-->
+<!--    <parameter name="browserVersion" value="94"/>-->
+<!--    &lt;!&ndash;both cloud  local parameters&ndash;&gt;-->
+<!--    -->
+
+
+    <parameter name="os" value="OS X"/>
+    <parameter name="browserName" value="chrome"/>
+    <parameter name="url" value="https://www.piit.com"/>
+
+
+
+    <test name = "smoke testing Amazon search">
+        <classes>
+            <class name="rest.callAllEmployeeResources"/>
+            <class name="rest.SingleEmployeeResources"/>
+        </classes>
+    </test>
+
+</suite>
