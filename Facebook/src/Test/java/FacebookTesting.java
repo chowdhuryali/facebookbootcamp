@@ -63,14 +63,6 @@ public class FacebookTesting extends CommonAPI {
     }
 
     @Test
-    //    Sign-in
-    public void test3() throws InterruptedException {
-        driver.findElement(By.id("email")).sendKeys("myemail@gmail.com");
-        driver.findElement(By.id("pass")).sendKeys("password");
-        Thread.sleep(3000);
-    }
-
-    @Test
     //     Find Software Quality Assurance Engineer Jobs
     public void test4() throws InterruptedException {
         driver.findElement(By.xpath("/html/body/div[1]/div[2]/div[2]/div/div/div[2]/ul/li[10]/a")).click();

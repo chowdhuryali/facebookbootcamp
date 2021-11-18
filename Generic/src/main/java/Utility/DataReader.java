@@ -12,10 +12,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-
 public class DataReader {
-
-
     HSSFWorkbook wb = null;
     HSSFSheet sheet = null;
     Cell cell = null;
@@ -125,9 +122,4 @@ public class DataReader {
             System.out.println(str);
         }
     }
-
-
 }
-
-
-
