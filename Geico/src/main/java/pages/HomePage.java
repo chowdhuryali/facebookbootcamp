@@ -2,6 +2,7 @@ package pages;
 
 import base.CommonAPI;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -324,46 +325,55 @@ public class HomePage extends CommonAPI{
     @FindBy(xpath = "/html/body/main/div[2]/div/div/div[2]/article[1]/a/figure/img")
     WebElement geckolatestAdventures;
 
-    @FindBy(xpath = "//*[@id=\"content\"]/div[2]/article[1]/a/figure/img")
-    WebElement tagTeam;
+    @FindBy(xpath = "//*[@id=\"comment\"]")
+    WebElement CmtBX;
 
-    @FindBy(xpath = "//*[@id=\"content\"]/div[2]/article[2]/a/header")
-    WebElement aniMal;
+    @FindBy(xpath = "//*[@id=\"author\"]")
+    WebElement nameField;
 
-    @FindBy(xpath = "//video[@class='video-stream html5-main-video']")
-    WebElement playCommercial;
+    @FindBy(xpath = "//*[@id=\"submit\"]")
+    WebElement submitBttn;
+
 
     public WebElement getGeicoCommercials() {
+
         return geicoCommercials;
     }
 
     public WebElement getGeckolatestAdventures() {
+
         return geckolatestAdventures;
     }
 
-    public WebElement getTagTeam() {
-        return tagTeam;
+    public WebElement getCmtBX() {
+        return CmtBX;
     }
 
-    public WebElement getAniMal() {
-        return aniMal;
+    public WebElement getNameField() {
+        return nameField;
     }
 
-    public WebElement getPlayCommercial() {
-        return playCommercial;
+    public WebElement getSubmitBttn() {
+        return submitBttn;
     }
 
     public void testingCommercial() {
+
         clickOn(getGeicoCommercials());
         waitFor(3);
         clickOn(getGeckolatestAdventures());
         waitFor(3);
-        clickOn(getTagTeam());
+        clickOn(getCmtBX());
         waitFor(3);
-        clickOn(getAniMal());
+        typeInto(getCmtBX(),"awesome add!");
         waitFor(3);
-        clickOn(getPlayCommercial());
-        waitFor(50);
+        clickOn(getNameField());
+        waitFor(3);
+        typeInto(getNameField() ,"Ahmed");
+        waitFor(3);
+        clickOn(getSubmitBttn());
+        waitFor(3);
+
     }
 
 }

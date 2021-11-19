@@ -12,9 +12,15 @@
 
     <test name = "smoke Testing Geico">
         <classes>
-            <class name="testfunctions.TestGetQuote"/>
             <class name="testfunctions.TestAccountLogin"/>
+            <class name="testfunctions.TestGeicoCommercial"/>
+            <class name="testfunctions.TestGetID"/>
+            <class name="testfunctions.TestGetQuote"/>
+            <class name="testfunctions.TestGoPaperless"/>
+            <class name="testfunctions.TestMakePayment"/>
             <class name="testfunctions.TestMenuOption"/>
+            <class name="testfunctions.TestProtectYourHome"/>
+            <class name="testfunctions.TestSavingMoney"/>
             <class name="testfunctions.TestSearchOption"/>
         </classes>
     </test>
