@@ -6,10 +6,7 @@ import com.relevantcodes.extentreports.ExtentTest;
 import java.util.HashMap;
 import java.util.Map;
 
-
-
 public class ExtentTestManager {
-
     static Map<Integer, ExtentTest> extentTestMap = new HashMap<Integer, ExtentTest>();
     private static ExtentReports extent = ExtentManager.getInstance();
     private static ExtentReports extentUpdate = ExtentManager.getInstance();
@@ -35,7 +32,4 @@ public class ExtentTestManager {
         extentTestMap.put((int) (long) (Thread.currentThread().getId()), test);
         return test;
     }
-
-
-
 }
