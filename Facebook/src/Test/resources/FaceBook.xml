@@ -7,7 +7,13 @@
     <test name = "smoke TestingFacebook">
         <classes>
             <class name="SignupFunction"/>
-            <class name="WatchPageFunction"/>
+            <class name="WatchPageTests"/>
+            <class name="MarketPlacePageTest"/>
+            <class name="GamesPageTests"/>
+            <class name="PlacesPageTests"/>
+            <class name="JobsPageTests"/>
+            <class name="GroupsPageTests"/>
+            <class name="FundraiserPageTests"/>
         </classes>
     </test>
 

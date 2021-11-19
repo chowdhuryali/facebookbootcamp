@@ -4,7 +4,9 @@ import base.CommonAPI;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
-public class WatchPageFunction extends CommonAPI {
+public class WatchPageTests extends CommonAPI {
+
+//    looking for java tutorial videos
     @Test
             public void watchsearch() {
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
@@ -12,5 +14,4 @@ public class WatchPageFunction extends CommonAPI {
         homePage.watch();
         watchPage.WatchSearch();
     }
-
 }

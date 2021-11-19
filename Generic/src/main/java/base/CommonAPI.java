@@ -19,6 +19,7 @@ import org.testng.annotations.*;
 import reporting.ExtentManager;
 import reporting.ExtentTestManager;
 
+import java.awt.*;
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -167,10 +168,6 @@ public class CommonAPI {
         driver.quit();
     }
 
-    public void alisendkey(String locator, String input){
-        driver.findElement(By.xpath(locator)).sendKeys(input);
-    }
-
     public void typeAndEnter(String locator, String input){
         try {
             driver.findElement(By.cssSelector(locator)).sendKeys(input, Keys.ENTER);
@@ -202,6 +199,10 @@ public class CommonAPI {
     //------------------------------------------------------------------------------------------------------------------------
     //generic methods for page factory
     //------------------------------------------------------------------------------------------------------------------------
+    public void typePassword(WebElement element, String value){
+    TextField password = new TextField(12);
+    password.setEchoChar('*');}
+
     public void typeInto(WebElement element, String value){
         element.sendKeys(value);
     }
