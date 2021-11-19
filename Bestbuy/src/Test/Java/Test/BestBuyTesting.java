@@ -4,12 +4,9 @@ import base.CommonAPI;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-import java.util.concurrent.TimeUnit;
 
 public class BestBuyTesting extends CommonAPI {
 
@@ -21,7 +18,6 @@ public class BestBuyTesting extends CommonAPI {
         WebElement cart = driver.findElement(By.linkText("Apple"));
         cart.click();
         Thread.sleep(500);
-
         driver.close();
 
     }
@@ -243,5 +239,20 @@ public class BestBuyTesting extends CommonAPI {
     }
 }
 
+
+
+
+
+//
+//    @FindBy(xpath = "//button[@class='c-close-icon c-modal-close-icon']")
+//    WebElement goodtiding; //exit popup
+//
+//
+//
+//
+//    // pop up cancel
+//    public void closingpopup(){
+//        clickOn(getGoodtiding());
+//    }
 
 
