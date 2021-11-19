@@ -3,6 +3,7 @@ package pages;
 import base.CommonAPI;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+<<<<<<< HEAD
 import java.util.ArrayList;
 import java.util.List;
 
@@ -45,8 +46,15 @@ public class HomePage extends CommonAPI {
     List<WebElement> MenuBar; //homepage menubar use arraylist to search each items and click
 
 
+=======
+
+public class HomePage extends CommonAPI {
+
+>>>>>>> a8a2f759f1718ddc79e3660bccf18d219d1b03d9
 
 
+    @FindBy(xpath = "//button[@class='c-close-icon c-modal-close-icon']")
+    WebElement goodtiding; //exit popup
 
 
 
@@ -54,6 +62,7 @@ public class HomePage extends CommonAPI {
         return goodtiding;
     }
 
+<<<<<<< HEAD
 //DONE
     public WebElement getApple() {
 
@@ -109,66 +118,16 @@ public class HomePage extends CommonAPI {
 
 
                 // pop up cancel
+=======
+    // pop up cancel
+>>>>>>> a8a2f759f1718ddc79e3660bccf18d219d1b03d9
     public void closingpopup(){
-       clickOn(getGoodtiding());
-    }
-
-            //entering muliple search along with clearing the search bad
-    public void searchingMultipleItems(String srt){
-        typeEnter(getSearchItem(),srt);
-            ClearingSearch();
-    }
-
-                //not done yet include click function dont know
-    public List <String> getMenuBarElements(){
-    List <String> lists = new ArrayList<>();
-    List <WebElement> Elements = getMenuBar();
-        for (WebElement element : Elements) {
-
-
-            lists.add(element.getText());
-
-        }
-        return lists;
-    }
-
-    //entering item in the search bar
-    public void searchItem(String srt){
-        typeEnter(getSearchItem(), srt);
-    }
-
-        //clearing search bar
-    public void ClearingSearch(){
-        clearTextField(getSearchItem());
+        clickOn(getGoodtiding());
     }
 
 
-    //no need
-        public void loadingApple(){
-        clickOn(getApple());
 
-}
-        //login in
-    public void AccountSignIn(){
-        clickOn(getClickingAccount());
-        waitFor(2);
-        clickOn(getSignin());
-        waitFor(2);
-        clickOn(getUsername());
-        waitFor(2);
-        typeInto(getUsername(),"jawadsyedofficial23@gmail.com");
-        waitFor(2);
-        clickOn(getPassword());
-        waitFor(2);
-        typeEnter(getPassword(),"Pagedown1");
-        waitFor(3);
-
-    }
 
 
 
 }
-
-
-
-

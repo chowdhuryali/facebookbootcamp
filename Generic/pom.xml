@@ -16,8 +16,6 @@
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
 
-
-
     <dependencies>
         <dependency>
             <groupId>org.testng</groupId>
@@ -48,6 +46,7 @@
             <artifactId>extentreports</artifactId>
         </dependency>
 
+        <!-- extent reports -->
         <dependency>
             <groupId>com.relevantcodes</groupId>
             <artifactId>extentreports</artifactId>

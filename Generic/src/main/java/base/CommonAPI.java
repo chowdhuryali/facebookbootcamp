@@ -3,11 +3,13 @@ package base;
 import com.relevantcodes.extentreports.LogStatus;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
+import org.checkerframework.checker.units.qual.K;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.interactions.SourceType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -35,8 +37,8 @@ import java.util.concurrent.TimeUnit;
 
 public class CommonAPI {
     public WebDriver driver = null;
-    public String browserstack_username = "";
-    public String browserstack_accesskey = ""; //using browserstack to stream live on the website
+    public String browserstack_username = "nacerhadjsaid1";
+    public String browserstack_accesskey = "pK4miZ8sp15afqsvGckE";
     public String saucelabs_username = "";
     public String saucelabs_accesskey = "";
     boolean flag = false;
@@ -102,7 +104,11 @@ public class CommonAPI {
     @BeforeMethod
     public void setUp(@Optional("false") boolean useCloudEnv, @Optional("false") String cloudEnvName,
                       @Optional("OS X") String os, @Optional("10") String os_version, @Optional("chrome") String browserName, @Optional("34")
+<<<<<<< HEAD
                               String browserVersion, @Optional("https://www.geico.com/") String url) throws IOException {
+=======
+                              String browserVersion, @Optional("https://www.facebook.com") String url) throws IOException {
+>>>>>>> a8a2f759f1718ddc79e3660bccf18d219d1b03d9
 
         if (useCloudEnv == true) {
             if (cloudEnvName.equalsIgnoreCase("browserstack")) {
@@ -113,6 +119,7 @@ public class CommonAPI {
         } else {
             getLocalDriver(os, browserName);
         }
+
 
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(25, TimeUnit.SECONDS);
@@ -162,8 +169,13 @@ public class CommonAPI {
         return driver;
     }
     @AfterMethod
+
     public void afterMethod () {
         driver.quit();
+    }
+
+    public void alisendkey(String locator, String input){
+        driver.findElement(By.xpath(locator)).sendKeys(input);
     }
 
     public void typeAndEnter(String locator, String input){
@@ -202,12 +214,19 @@ public class CommonAPI {
     }
     public void typeEnter(WebElement element, String str){
         element.sendKeys(str, Keys.ENTER);
+
     }
+<<<<<<< HEAD
+
+
+
 
     public void Enter(WebElement element){
         element.sendKeys(Keys.ENTER);
 
     }
+=======
+>>>>>>> 55e1c7a300a51e09d77b26a2958d7ae67263dfcb
     public void selectDropdownElement(WebElement element, String value){
         Select sel = new Select(element);
         try {
@@ -227,9 +246,16 @@ public class CommonAPI {
     public void clearTextField(WebElement element){
         element.clear();
     }
+    public void clickandclear(WebElement element){
+        element.click();
+        waitFor(2);
+        element.clear();
+    }
     public void clickOn(WebElement element){
         element.click();
+
     }
+
     public void hoverOver(WebDriver driver, WebElement element){
         Actions action = new Actions(driver);
         action.moveToElement(element).build().perform();
@@ -255,6 +281,12 @@ public class CommonAPI {
         String st = element.getText();
         return st;
     }
+    public void text_for_Elements(WebElement elements){
+        String t = elements.getText();
+        System.out.println(t);
+    }
+
+
     public List<String> getTextFromListOfWebElements(List<WebElement> list) {
         List<String> items = new ArrayList<String>();
         for (WebElement element : list) {
@@ -262,6 +294,9 @@ public class CommonAPI {
         }
         return items;
     }
+
+
+
     public void okAlert(){
         Alert alert = driver.switchTo().alert();
         alert.accept();
