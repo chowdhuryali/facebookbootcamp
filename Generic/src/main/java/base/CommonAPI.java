@@ -105,7 +105,11 @@ public class CommonAPI {
     @BeforeMethod
     public void setUp(@Optional("false") boolean useCloudEnv, @Optional("false") String cloudEnvName,
                       @Optional("OS X") String os, @Optional("10") String os_version, @Optional("chrome") String browserName, @Optional("34")
+<<<<<<< HEAD
+                              String browserVersion, @Optional("https://www.geico.com/") String url) throws IOException {
+=======
                               String browserVersion, @Optional("https://www.facebook.com") String url) throws IOException {
+>>>>>>> a8a2f759f1718ddc79e3660bccf18d219d1b03d9
 
         if (useCloudEnv == true) {
             if (cloudEnvName.equalsIgnoreCase("browserstack")) {

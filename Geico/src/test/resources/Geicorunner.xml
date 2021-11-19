@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "https://testng/testng-1.0.dtd">
+
+<suite name="Geico Automation Script" parallel="false">
+
+    <!--<parameter name="useCloudEnv" value="false"/>-->
+    <!--<parameter name="cloudEnvName" value="browserstack"/>-->
+    <parameter name="os" value="OS X"/>
+    <!--<parameter name="os_version" value="Sierra"/>-->
+    <parameter name="browserName" value="chrome"/>
+    <!--<parameter name="browserVersion" value="65.0"/>-->
+    <parameter name="url" value="https://www.geico.com/"/>
+
+    <test name = "smoke Testing Geico">
+        <classes>
+            <class name="testfunctions.TestAccountLogin"/>
+            <class name="testfunctions.TestGeicoCommercial"/>
+            <class name="testfunctions.TestGetID"/>
+            <class name="testfunctions.TestGetQuote"/>
+            <class name="testfunctions.TestGoPaperless"/>
+            <class name="testfunctions.TestMakePayment"/>
+            <class name="testfunctions.TestMenuOption"/>
+            <class name="testfunctions.TestProtectYourHome"/>
+            <class name="testfunctions.TestSavingMoney"/>
+            <class name="testfunctions.TestSearchOption"/>
+        </classes>
+    </test>
+
+</suite>
