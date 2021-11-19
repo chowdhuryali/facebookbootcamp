@@ -3,11 +3,13 @@ package base;
 import com.relevantcodes.extentreports.LogStatus;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
+import org.checkerframework.checker.units.qual.K;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.interactions.SourceType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -115,6 +117,7 @@ public class CommonAPI {
             getLocalDriver(os, browserName);
         }
 
+
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(25, TimeUnit.SECONDS);
         driver.get(url);
@@ -199,16 +202,23 @@ public class CommonAPI {
     //------------------------------------------------------------------------------------------------------------------------
     //generic methods for page factory
     //------------------------------------------------------------------------------------------------------------------------
-    public void typePassword(WebElement element, String value){
-    TextField password = new TextField(12);
-    password.setEchoChar('*');}
 
     public void typeInto(WebElement element, String value){
         element.sendKeys(value);
     }
     public void typeEnter(WebElement element, String str){
         element.sendKeys(str, Keys.ENTER);
+
     }
+
+
+
+
+    public void Enter(WebElement element){
+        element.sendKeys(Keys.ENTER);
+
+    }
+
     public void selectDropdownElement(WebElement element, String value){
         Select sel = new Select(element);
         try {
@@ -228,9 +238,16 @@ public class CommonAPI {
     public void clearTextField(WebElement element){
         element.clear();
     }
+    public void clickandclear(WebElement element){
+        element.click();
+        waitFor(2);
+        element.clear();
+    }
     public void clickOn(WebElement element){
         element.click();
+
     }
+
     public void hoverOver(WebDriver driver, WebElement element){
         Actions action = new Actions(driver);
         action.moveToElement(element).build().perform();
@@ -256,6 +273,12 @@ public class CommonAPI {
         String st = element.getText();
         return st;
     }
+    public void text_for_Elements(WebElement elements){
+        String t = elements.getText();
+        System.out.println(t);
+    }
+
+
     public List<String> getTextFromListOfWebElements(List<WebElement> list) {
         List<String> items = new ArrayList<String>();
         for (WebElement element : list) {
@@ -263,6 +286,9 @@ public class CommonAPI {
         }
         return items;
     }
+
+
+
     public void okAlert(){
         Alert alert = driver.switchTo().alert();
         alert.accept();

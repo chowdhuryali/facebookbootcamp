@@ -8,7 +8,7 @@ public class WatchPageTests extends CommonAPI {
 
 //    looking for java tutorial videos
     @Test
-            public void watchsearch() {
+            public void JavaTutorial() {
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
         WatchPage watchPage = PageFactory.initElements(driver, WatchPage.class);
         homePage.watch();

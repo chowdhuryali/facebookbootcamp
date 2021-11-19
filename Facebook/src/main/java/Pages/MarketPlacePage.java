@@ -106,6 +106,169 @@ public class MarketPlacePage extends CommonAPI {
     @FindBy (xpath = "//div[@class='rq0escxv l9j0dhe7 du4w35lb hybvsw6c qbxu24ho bxzzcbxg lxuwth05 h2mp5456 goun2846 ccm00jje s44p3ltw mk2mc5f4 frvqaej8 ed0hlay0 afxsp9o4 jcgfde61 io0zqebd m5lcvass fbipl8qg nwvqtn77 k4urcfbm ni8dbmo4 stjgntxs sbcfpzgs']//span[@class='a8c37x1j ni8dbmo4 stjgntxs l9j0dhe7 ltmttdrg g0qnabr5'][normalize-space()='Wardrobes']")
     WebElement Wardrobes;
 
+    @FindBy (xpath = "//span[contains(text(),'Toys & Games')]")
+    WebElement ToysGames;
+
+    @FindBy (xpath = "//div[@class='rq0escxv l9j0dhe7 du4w35lb hybvsw6c qbxu24ho bxzzcbxg lxuwth05 h2mp5456 goun2846 ccm00jje s44p3ltw mk2mc5f4 frvqaej8 ed0hlay0 afxsp9o4 jcgfde61 io0zqebd m5lcvass fbipl8qg nwvqtn77 k4urcfbm ni8dbmo4 stjgntxs sbcfpzgs']//span[@class='a8c37x1j ni8dbmo4 stjgntxs l9j0dhe7 ltmttdrg g0qnabr5'][normalize-space()='Puzzles']")
+    WebElement puzzlesbutton;
+
+    @FindBy (xpath = "//img[@alt='Puzzles in Bridgewater, NJ']")
+    WebElement firstlistingpuzzle;
+
+    @FindBy (xpath = "//div[@class='rq0escxv l9j0dhe7 du4w35lb j83agx80 pfnyh3mw taijpn5t bp9cbjyn owycx6da btwxx1t3 kt9q3ron ak7q8e6j isp2s0ed ri5dt5u2 rt8b4zig n8ej3o3l agehan2d sk4xxmp2 hv4rvrfc dati1w0a tdjehn4e tv7at329']")
+    WebElement sharepuzzle;
+
+    @FindBy (xpath = "//span[normalize-space()='Copy link']")
+    WebElement copypuzzlelink;
+
+//    share marketplace items
+
+    @FindBy (xpath = "//html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/span[1]/div[1]/div[1]/a[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/img[1]")
+    WebElement firstMacbookProListing;
+
+    @FindBy (xpath = "//div[@aria-label='View next image']//i[@class='hu5pjgll m6k467ps']")
+    WebElement NextimageofPro;
+
+    @FindBy (xpath = "//div[@class='rq0escxv l9j0dhe7 du4w35lb j83agx80 pfnyh3mw taijpn5t bp9cbjyn owycx6da btwxx1t3 kt9q3ron ak7q8e6j isp2s0ed ri5dt5u2 rt8b4zig n8ej3o3l agehan2d sk4xxmp2 hv4rvrfc dati1w0a tdjehn4e tv7at329']//i[@class='hu5pjgll lzf7d6o1']")
+    WebElement SharePro;
+
+    @FindBy (xpath = "//span[normalize-space()='Copy link']")
+    WebElement CopyProLink;
+
+//    Scroll down top Popular Category
+    @FindBy (xpath = "//span[contains(text(),'Popular Categories')]")
+    WebElement PopularCategory;
+
+    @FindBy (xpath = "//span[@class='a8c37x1j ni8dbmo4 stjgntxs l9j0dhe7 ltmttdrg g0qnabr5'][normalize-space()='Furniture']")
+    WebElement FurniturePopular;
+
+    @FindBy (xpath = "//div[@class='rq0escxv l9j0dhe7 du4w35lb hybvsw6c qbxu24ho bxzzcbxg lxuwth05 h2mp5456 goun2846 ccm00jje s44p3ltw mk2mc5f4 frvqaej8 ed0hlay0 afxsp9o4 jcgfde61 io0zqebd m5lcvass fbipl8qg nwvqtn77 k4urcfbm ni8dbmo4 stjgntxs sbcfpzgs']//span[@class='a8c37x1j ni8dbmo4 stjgntxs l9j0dhe7 ltmttdrg g0qnabr5'][normalize-space()='Baby Furniture']")
+    WebElement BabyFurniture;
+
+    @FindBy (xpath = "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[6]/div[1]/div[2]/div[4]/div[1]/span[1]/div[1]/div[1]/a[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/img[1]")
+    WebElement BabyCrib;
+
+//    Browse BMW cars through Vehicles Category
+
+    @FindBy (xpath = "//div[@class='rq0escxv l9j0dhe7 du4w35lb hybvsw6c qbxu24ho bxzzcbxg lxuwth05 h2mp5456 goun2846 ccm00jje s44p3ltw mk2mc5f4 frvqaej8 ed0hlay0 afxsp9o4 jcgfde61 io0zqebd m5lcvass fbipl8qg nwvqtn77 k4urcfbm ni8dbmo4 stjgntxs sbcfpzgs']//span[@class='a8c37x1j ni8dbmo4 stjgntxs l9j0dhe7 ltmttdrg g0qnabr5'][normalize-space()='Cars']")
+    WebElement Cars;
+
+    @FindBy (xpath = "//div[@class='rq0escxv l9j0dhe7 du4w35lb hybvsw6c qbxu24ho bxzzcbxg lxuwth05 h2mp5456 goun2846 ccm00jje s44p3ltw mk2mc5f4 frvqaej8 ed0hlay0 afxsp9o4 jcgfde61 io0zqebd m5lcvass fbipl8qg nwvqtn77 k4urcfbm ni8dbmo4 stjgntxs sbcfpzgs']//span[@class='a8c37x1j ni8dbmo4 stjgntxs l9j0dhe7 ltmttdrg g0qnabr5'][normalize-space()='Sedans']")
+    WebElement Sedan;
+
+    @FindBy (xpath = "//div[@class='rq0escxv l9j0dhe7 du4w35lb hybvsw6c qbxu24ho bxzzcbxg lxuwth05 h2mp5456 goun2846 ccm00jje s44p3ltw mk2mc5f4 frvqaej8 ed0hlay0 afxsp9o4 jcgfde61 io0zqebd m5lcvass fbipl8qg nwvqtn77 k4urcfbm ni8dbmo4 stjgntxs sbcfpzgs']//span[@class='a8c37x1j ni8dbmo4 stjgntxs l9j0dhe7 ltmttdrg g0qnabr5'][normalize-space()='Bmw Series 3']")
+    WebElement BMW;
+
+    @FindBy (xpath = "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[5]/div[1]/div[2]/div[4]/div[1]/span[1]/div[1]/div[1]/a[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/img[1]")
+    WebElement ListingBMW;
+
+//    Finding iphone through searchbar dynamic dropdown
+
+    @FindBy (xpath = "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]")
+    WebElement iphone;
+
+    @FindBy (xpath = "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/span[1]/div[1]/div[1]/a[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/img[1]")
+    WebElement iphonelisting;
+
+    @FindBy (xpath = "//span[contains(text(),'Works perfectly')]")
+    WebElement iphoneDescriptionText;
+
+//    Samsunc tv with screenshot
+
+    @FindBy (xpath = "//html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/i[1]")
+    WebElement samsungtv;
+
+    @FindBy (xpath = "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[2]/div[7]/div[1]/span[1]/div[1]/div[1]/a[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/img[1]")
+    WebElement samsunglisting;
+
+    public WebElement getSamsungtv() {
+        return samsungtv;
+    }
+
+    public WebElement getSamsunglisting() {
+        return samsunglisting;
+    }
+
+    public WebElement getIphone() {
+        return iphone;
+    }
+
+    public WebElement getIphonelisting() {
+        return iphonelisting;
+    }
+
+    public WebElement getIphoneDescriptionText() {
+        return iphoneDescriptionText;
+    }
+
+    public WebElement getCars() {
+        return Cars;
+    }
+
+    public WebElement getSedan() {
+        return Sedan;
+    }
+
+    public WebElement getBMW() {
+        return BMW;
+    }
+
+    public WebElement getListingBMW() {
+        return ListingBMW;
+    }
+
+    public WebElement getPopularCategory() {
+        return PopularCategory;
+    }
+
+    public WebElement getFurniturePopular() {
+        return FurniturePopular;
+    }
+
+    public WebElement getBabyFurniture() {
+        return BabyFurniture;
+    }
+
+    public WebElement getBabyCrib() {
+        return BabyCrib;
+    }
+
+    public WebElement getFirstMacbookProListing() {
+        return firstMacbookProListing;
+    }
+
+    public WebElement getNextimageofPro() {
+        return NextimageofPro;
+    }
+
+    public WebElement getSharePro() {
+        return SharePro;
+    }
+
+    public WebElement getCopyProLink() {
+        return CopyProLink;
+    }
+
+    public WebElement getToysGames() {
+        return ToysGames;
+    }
+
+    public WebElement getPuzzlesbutton() {
+        return puzzlesbutton;
+    }
+
+    public WebElement getFirstlistingpuzzle() {
+        return firstlistingpuzzle;
+    }
+
+    public WebElement getSharepuzzle() {
+        return sharepuzzle;
+    }
+
+    public WebElement getCopypuzzlelink() {
+        return copypuzzlelink;
+    }
+
     public WebElement getHomeGoods() {
         return HomeGoods;
     }
@@ -304,6 +467,93 @@ public class MarketPlacePage extends CommonAPI {
         clickOn(getBedroomFurniture());
         waitFor(2);
         clickOn(getWardrobes());
+        waitFor(2);
+    }
+
+    public void PuzzleGameShare(){
+        clickOn(getToysGames());
+        waitFor(2);
+        clickOn(getPuzzlesbutton());
+        waitFor(2);
+        clickOn(getFirstlistingpuzzle());
+        waitFor(2);
+        clickOn(getSharepuzzle());
+        waitFor(2);
+        clickOn(getCopypuzzlelink());
+        waitFor(2);
+    }
+
+    public void ShareMacbookPro(){
+        typeEnter(getSearchMarketplace(), "macbook pro");
+        waitFor(2);
+        clickOn(getFirstMacbookProListing());
+        waitFor(2);
+        clickOn(getNextimageofPro());
+        waitFor(2);
+        clickOn(getNextimageofPro());
+        waitFor(2);
+        clickOn(getNextimageofPro());
+        waitFor(2);
+        clickOn(getSharePro());
+        waitFor(2);
+        clickOn(getCopyProLink());
+        waitFor(2);
+
+    }
+
+    public void ScrollToPopular(){
+        scrollToView(getPopularCategory(), driver);
+        waitFor(2);
+        clickOn(getFurniturePopular());
+        waitFor(2);
+        clickOn(getBabyFurniture());
+        waitFor(2);
+        clickOn(getBabyCrib());
+        waitFor(2);
+    }
+
+    public void NavigateBackForwardHome(){
+        typeEnter(getSearchMarketplace(), "printer");
+        waitFor(2);
+        navigateBack();
+        waitFor(2);
+        navigateForward();
+        waitFor(2);
+        navigateToHomeWindow();
+        waitFor(2);
+    }
+
+    public void BrowseforBMW(){
+        clickOn(getVehicles());
+        waitFor(2);
+        clickOn(getCars());
+        waitFor(2);
+        clickOn((getSedan()));
+        waitFor(2);
+        clickOn(getBMW());
+        waitFor(2);
+    }
+
+    public void iphoneDescriptionGet(){
+        typeInto(getSearchMarketplace(), "iphone");
+        waitFor(2);
+        clickOn(getIphone());
+        waitFor(2);
+        clickOn(getIphonelisting());
+        waitFor(2);
+        clickOn(getNextimage());
+        waitFor(2);
+        text_for_Elements(getIphoneDescriptionText());
+    }
+
+    public void samsungtvscreenshot(){
+        typeInto(getSearchMarketplace(), "samsung tv");
+        waitFor(2);
+        clickOn(getSamsungtv());
+        waitFor(2);
+        clickOn(getSamsunglisting());
+        waitFor(2);
+        captureScreenshot();
         waitFor(2);
     }
 }

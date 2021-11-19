@@ -24,7 +24,16 @@ public class JobsPageTests extends CommonAPI {
         JobsPage jobsPage = PageFactory.initElements(driver, JobsPage.class);
         homePage.Jobs();
         jobsPage.HundredKJobs();
-}
+    }
+
+    @Test
+    public void ITJobsCategoryBrowse(){
+        HomePage homePage = PageFactory.initElements(driver, HomePage.class);
+        JobsPage jobsPage = PageFactory.initElements(driver, JobsPage.class);
+        homePage.Jobs();
+        jobsPage.ITJobsCategory();
+    }
+
 
 
 }

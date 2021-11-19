@@ -11,16 +11,32 @@ public class MarketPlacePageTest extends CommonAPI {
 
     //search for honda crv
     @Test
-    public void searchbar(){
+    public void SerchHondaCRV(){
         HomePage homepage = PageFactory.initElements(driver, HomePage.class);
         MarketPlacePage marketPlacePage = PageFactory.initElements(driver, MarketPlacePage.class);
         homepage.MarketPlace();
         marketPlacePage.SearchFirst();
     }
 
+    @Test
+    public void GetIphoneDescriptionText(){
+        HomePage homePage = PageFactory.initElements(driver, HomePage.class);
+        MarketPlacePage marketPlacePage = PageFactory.initElements(driver, MarketPlacePage.class);
+        homePage.MarketPlace();
+        marketPlacePage.iphoneDescriptionGet();
+    }
+
+    @Test
+    public void SamsungTVScreenshot(){
+        HomePage homePage = PageFactory.initElements(driver, HomePage.class);
+        MarketPlacePage marketPlacePage = PageFactory.initElements(driver, MarketPlacePage.class);
+        homePage.MarketPlace();
+        marketPlacePage.samsungtvscreenshot();
+    }
+
 //    search item one after another
     @Test
-    public void searchItemsOneAfterAnother() {
+    public void SearchItemsOneAfterAnother() {
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
         MarketPlacePage marketPlacePage = PageFactory.initElements(driver, MarketPlacePage.class);
         homePage.MarketPlace();
@@ -85,12 +101,52 @@ public class MarketPlacePageTest extends CommonAPI {
 
 //    looking to buy wardrobes in Home Goods Section
     @Test
-    public void Wardrobes(){
+    public void Wardrobes() {
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
         MarketPlacePage marketPlacePage = PageFactory.initElements(driver, MarketPlacePage.class);
         homePage.MarketPlace();
         marketPlacePage.Wardrobes();
     }
 
+//    copy puzzle game share link
+    @Test
+    public void PuzzleGameShare(){
+        HomePage homePage = PageFactory.initElements(driver, HomePage.class);
+        MarketPlacePage marketPlacePage = PageFactory.initElements(driver, MarketPlacePage.class);
+        homePage.MarketPlace();
+        marketPlacePage.PuzzleGameShare();
+    }
 
+//    search for macbook pro, scrolling the image and share the link
+    @Test
+    public void MacbookProScrolling(){
+        HomePage homePage = PageFactory.initElements(driver, HomePage.class);
+        MarketPlacePage marketPlacePage = PageFactory.initElements(driver, MarketPlacePage.class);
+        homePage.MarketPlace();
+        marketPlacePage.ShareMacbookPro();
+    }
+
+    @Test
+    public void ScrollToPopularCategory(){
+        HomePage homePage = PageFactory.initElements(driver, HomePage.class);
+        MarketPlacePage marketPlacePage = PageFactory.initElements(driver, MarketPlacePage.class);
+        homePage.MarketPlace();
+        marketPlacePage.ScrollToPopular();
+    }
+
+    @Test
+    public void NavigateBackForwardHome(){
+        HomePage homePage = PageFactory.initElements(driver, HomePage.class);
+        MarketPlacePage marketPlacePage = PageFactory.initElements(driver, MarketPlacePage.class);
+        homePage.MarketPlace();
+        marketPlacePage.NavigateBackForwardHome();
+    }
+
+    @Test
+    public void BrowseBMWThroughVehicles(){
+        HomePage homePage = PageFactory.initElements(driver, HomePage.class);
+        MarketPlacePage marketPlacePage = PageFactory.initElements(driver, MarketPlacePage.class);
+        homePage.MarketPlace();
+        marketPlacePage.BrowseforBMW();
+    }
 }

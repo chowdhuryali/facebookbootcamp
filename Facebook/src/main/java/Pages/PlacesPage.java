@@ -37,6 +37,73 @@ public class PlacesPage extends CommonAPI {
     @FindBy (xpath = "//span[normalize-space()='Reviews']")
     WebElement reviewsofhotel;
 
+//    like pages of Dhanmondi Lake Dhaka
+
+    @FindBy (xpath = "//input[@placeholder='City name']")
+    WebElement placesSearh;
+
+    @FindBy (xpath = "//span[normalize-space()='Dhaka, Bangladesh']")
+    WebElement selectDhaka;
+
+    @FindBy (xpath = "//div[@class='bp9cbjyn rq0escxv j83agx80 pfnyh3mw frgo5egb l9j0dhe7 ofv0k9yr hv4rvrfc dati1w0a aodizinl']//span[@class='d2edcug0 hpfvmrgz qv66sw1b c1et5uql oi732d6d ik7dh3pa ht8s03o8 a8c37x1j keod5gw0 nxhoafnm aigsh9s9 d9wwppkn fe6kdd0r mau55g9w c8b282yb iv3no6db jq4qci2q a3bd9o3v b1v8xokw m9osqain'][normalize-space()='Outdoor']")
+    WebElement DhakaOutdoor;
+
+    @FindBy (xpath = "//a[@href='https://www.facebook.com/DhanmondiLakeBD/']//img[@class='k4urcfbm bixrwtb6 datstx6m']")
+    WebElement DhanmondiLakePage;
+
+    @FindBy (xpath = "//i[@class='_3-8_ img sp__GhauiEHSVJ_2x sx_8998af']")
+    WebElement LikeDhanmondiLake;
+
+//    getText
+
+    @FindBy (xpath = "//span[normalize-space()='Philadelphia, Pennsylvania']")
+    WebElement Philadelphia;
+
+    @FindBy (xpath = "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[2]/div[1]/a[1]/img[1]")
+    WebElement FirstRestaurantListingPL;
+
+    @FindBy (xpath = "//span[normalize-space()='Reviews']")
+    WebElement ReveiwButton;
+
+    @FindBy (xpath = "/html[1]/body[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[3]/div[1]/div[2]/div[2]/div[1]/div[2]/div[1]/div[3]/div[2]/p[1]")
+     WebElement ReviewText;
+
+    public WebElement getPhiladelphia() {
+        return Philadelphia;
+    }
+
+    public WebElement getFirstRestaurantListingPL() {
+        return FirstRestaurantListingPL;
+    }
+
+    public WebElement getReveiwButton() {
+        return ReveiwButton;
+    }
+
+    public WebElement getReviewText() {
+        return ReviewText;
+    }
+
+    public WebElement getPlacesSearh() {
+        return placesSearh;
+    }
+
+    public WebElement getSelectDhaka() {
+        return selectDhaka;
+    }
+
+    public WebElement getDhakaOutdoor() {
+        return DhakaOutdoor;
+    }
+
+    public WebElement getDhanmondiLakePage() {
+        return DhanmondiLakePage;
+    }
+
+    public WebElement getLikeDhanmondiLake() {
+        return LikeDhanmondiLake;
+    }
+
     public WebElement getMiami() {
         return Miami;
     }
@@ -99,5 +166,30 @@ public class PlacesPage extends CommonAPI {
         waitFor(2);
         clickOn(getReviewsofhotel());
         waitFor(2);
+    }
+
+    public void DhanmodiLakeLike(){
+        typeInto(getPlacesSearh(), "Dhaka");
+        waitFor(2);
+        clickOn(getSelectDhaka());
+        waitFor(2);
+        clickOn(getDhakaOutdoor());
+        waitFor(2);
+        clickOn(getDhanmondiLakePage());
+        waitFor(2);
+        clickOn(getLikeDhanmondiLake());
+        waitFor(2);
+    }
+
+    public void GetText(){
+        clickOn(getPhiladelphia());
+        waitFor(2);
+        clickOn(getFirstRestaurantListingPL());
+        waitFor(2);
+        clickOn(getReveiwButton());
+        waitFor(2);
+        text_for_Elements(getReviewText());
+        waitFor(2);
+
     }
 }

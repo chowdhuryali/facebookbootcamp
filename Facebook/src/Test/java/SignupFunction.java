@@ -9,7 +9,7 @@ public class SignupFunction extends CommonAPI {
 
 //    try to signup
     @Test
-    public void signup(){
+    public void SignupTest(){
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
         SignupPage signupPage = PageFactory.initElements(driver, SignupPage.class);
         homePage.signup();

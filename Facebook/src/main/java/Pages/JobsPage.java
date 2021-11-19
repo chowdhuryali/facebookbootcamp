@@ -37,6 +37,36 @@ public class JobsPage extends CommonAPI {
     @FindBy (xpath = "//input[@id='jsc_c_k']")
     WebElement password1;
 
+//    Apply for jobs through Jobs Category
+
+    @FindBy (xpath = "//span[contains(text(),'Information Technology')]")
+    WebElement IT;
+
+    @FindBy (xpath = "//span[contains(text(),'IT Managers')]")
+    WebElement ITManager;
+
+    @FindBy (xpath = "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]/span[1]/div[1]/div[1]/div[1]")
+    WebElement BrowseJob;
+
+    @FindBy (xpath = "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]")
+    WebElement ApplyIT;
+
+    public WebElement getIT() {
+        return IT;
+    }
+
+    public WebElement getITManager() {
+        return ITManager;
+    }
+
+    public WebElement getBrowseJob() {
+        return BrowseJob;
+    }
+
+    public WebElement getApplyIT() {
+        return ApplyIT;
+    }
+
     public WebElement getEmail1() {
         return email1;
     }
@@ -111,7 +141,16 @@ public class JobsPage extends CommonAPI {
         waitFor(2);
         typeInto(getPassword1(), "password");
         waitFor(2);
+    }
 
-
+    public void ITJobsCategory(){
+        clickOn(getIT());
+        waitFor(2);
+        clickOn(getITManager());
+        waitFor(2);
+        clickOn(getBrowseJob());
+        waitFor(2);
+        clickOn(getApplyIT());
+        waitFor(2);
     }
 }

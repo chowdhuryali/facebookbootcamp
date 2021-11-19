@@ -22,6 +22,22 @@ public class PlacesPageTests extends CommonAPI {
         homePage.Places();
         placesPage.MiamiHotel();
     }
+
+    @Test
+    public void DhakaLakePageLike(){
+        HomePage homePage = PageFactory.initElements(driver, HomePage.class);
+        PlacesPage placesPage = PageFactory.initElements(driver, PlacesPage.class);
+        homePage.Places();
+        placesPage.DhanmodiLakeLike();
+    }
+
+    @Test
+    public void GetWebText(){
+        HomePage homePage = PageFactory.initElements(driver, HomePage.class);
+        PlacesPage placesPage = PageFactory.initElements(driver, PlacesPage.class);
+        homePage.Places();
+        placesPage.GetText();
+    }
 }
 
 
