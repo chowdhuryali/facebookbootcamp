@@ -11,7 +11,6 @@ public class TestProtectYourHome extends CommonAPI {
     public void protectYourHome() {
         HomePage protecthometips = PageFactory.initElements(driver,HomePage.class);
         protecthometips.protectyourHome();
-
     }
 
 }

@@ -11,8 +11,6 @@ public class TestGeicoCommercial extends CommonAPI {
     public void testingGeicocomm() {
         HomePage geicoadd = PageFactory.initElements(driver,HomePage.class);
         geicoadd.testingCommercial();
-
-
-
     }
+
 }

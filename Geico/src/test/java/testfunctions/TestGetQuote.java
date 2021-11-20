@@ -11,7 +11,6 @@ public class TestGetQuote extends CommonAPI {
     public void testingGetquote() {
         HomePage homepage = PageFactory.initElements(driver,HomePage.class);
         homepage.testingGetQuote();
-
     }
 
 

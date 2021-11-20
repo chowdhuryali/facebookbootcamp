@@ -47,8 +47,8 @@ public class AccountLoginPage extends CommonAPI {
         clickOn(getClickonLogin());
         waitFor(2);
         typeEnter(getEnterUsername(),"ciahmed");
+        waitFor(2);
         typeEnter(getEnterPassword(),"Password0990!");
-        clickOn(getEnterLogin());
         waitFor(2);
 
     }

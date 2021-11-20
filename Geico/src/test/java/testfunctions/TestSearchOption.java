@@ -12,7 +12,27 @@ public class TestSearchOption extends CommonAPI {
 
         SearchOptionPage searchoptionpage = PageFactory.initElements(driver,SearchOptionPage.class);
         searchoptionpage.testingSearch();
+    }
 
+    @Test
+    public void testingSearch2() {
+
+        SearchOptionPage searchtext = PageFactory.initElements(driver,SearchOptionPage.class);
+        searchtext.searchGEICO();
+    }
+
+    @Test
+    public void testingSearch3() {
+
+        SearchOptionPage searchcontact = PageFactory.initElements(driver,SearchOptionPage.class);
+        searchcontact.testingContactus();
+    }
+
+    @Test
+    public void testingSearch4() {
+
+        SearchOptionPage searchagent = PageFactory.initElements(driver,SearchOptionPage.class);
+        searchagent.testingSearchbar();
     }
 
 }

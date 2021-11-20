@@ -11,6 +11,5 @@ public class TestSavingMoney extends CommonAPI {
     public void testingsavingMoney() {
         HomePage savingsmoney = PageFactory.initElements(driver,HomePage.class);
         savingsmoney.testingSavingmoney();
-
     }
 }

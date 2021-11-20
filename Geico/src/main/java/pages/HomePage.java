@@ -373,7 +373,64 @@ public class HomePage extends CommonAPI{
         waitFor(3);
         clickOn(getSubmitBttn());
         waitFor(3);
-
     }
+
+    @FindBy(xpath = "//img[@class='gabby-face visible']")
+    WebElement cHat;
+
+    @FindBy(xpath = "//*[@id=\"FirstName\"]")
+    WebElement firstnaMe;
+
+    @FindBy(xpath = "//*[@id=\"LastName\"]")
+    WebElement lastnaMe;
+
+    @FindBy(xpath = "//*[@id=\"Email\"]")
+    WebElement eMail;
+
+    @FindBy(xpath = "//*[@id=\"State__c\"]")
+    WebElement selectState;
+
+
+    public WebElement getcHat() {
+        return cHat;
+    }
+
+    public WebElement getFirstnaMe() {
+        return firstnaMe;
+    }
+
+    public WebElement getLastnaMe() {
+        return lastnaMe;
+    }
+
+    public WebElement geteMail() {
+        return eMail;
+    }
+
+    public WebElement getSelectState() {
+        return selectState;
+    }
+
+    public void testingChat() {
+        clickOn(getcHat());
+        waitFor(3);
+        clickOn(getFirstnaMe());
+        waitFor(3);
+        typeInto(getFirstnaMe(),"Chowdhury");
+        waitFor(3);
+        clickOn(getLastnaMe());
+        waitFor(3);
+        typeInto(getLastnaMe(),"Ahmed");
+        waitFor(3);
+        clickOn(geteMail());
+        waitFor(3);
+        typeInto(geteMail(),"chowad@gmail.com");
+        waitFor(3);
+        clickOn(getSelectState());
+        waitFor(3);
+        selectDropdownElement(getSelectState(), "CA");
+        waitFor(3);
+    }
+
 
 }

@@ -3,7 +3,6 @@ package pages;
 import base.CommonAPI;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-<<<<<<< HEAD
 import java.util.ArrayList;
 import java.util.List;
 
@@ -46,11 +45,8 @@ public class HomePage extends CommonAPI {
     List<WebElement> MenuBar; //homepage menubar use arraylist to search each items and click
 
 
-=======
 
 public class HomePage extends CommonAPI {
-
->>>>>>> a8a2f759f1718ddc79e3660bccf18d219d1b03d9
 
 
     @FindBy(xpath = "//button[@class='c-close-icon c-modal-close-icon']")
@@ -62,7 +58,7 @@ public class HomePage extends CommonAPI {
         return goodtiding;
     }
 
-<<<<<<< HEAD
+
 //DONE
     public WebElement getApple() {
 
@@ -118,9 +114,9 @@ public class HomePage extends CommonAPI {
 
 
                 // pop up cancel
-=======
+
     // pop up cancel
->>>>>>> a8a2f759f1718ddc79e3660bccf18d219d1b03d9
+
     public void closingpopup(){
         clickOn(getGoodtiding());
     }

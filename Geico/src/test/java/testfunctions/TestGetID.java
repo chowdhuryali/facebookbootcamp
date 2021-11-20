@@ -11,7 +11,6 @@ public class TestGetID extends CommonAPI {
     public void testingGetID() {
         HomePage homepage = PageFactory.initElements(driver,HomePage.class);
         homepage.testingGetID();
-
     }
 
 

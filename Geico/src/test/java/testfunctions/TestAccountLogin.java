@@ -12,4 +12,5 @@ public class TestAccountLogin extends CommonAPI {
         AccountLoginPage accountlogin = PageFactory.initElements(driver,AccountLoginPage.class);
         accountlogin.testingAccountLogin();
     }
+
 }
