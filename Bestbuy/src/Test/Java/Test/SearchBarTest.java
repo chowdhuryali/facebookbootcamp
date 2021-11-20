@@ -15,7 +15,7 @@ public class SearchBarTest extends CommonAPI {
     @Test
     public void searchingSamsungTVTest(){
         searchingbrowser search = PageFactory.initElements(driver, searchingbrowser.class);
-      // search.clickOn(search.getGoodtiding());
+      search.clickOn(search.getGoodtiding());
         search.searchItem("samsung tv");
         waitFor(5);
 

@@ -6,9 +6,10 @@ import org.testng.annotations.Test;
 import pages.MenuBarPage;
 public class MenuBarTest extends CommonAPI {
 
-    @Test
+  //  @Test
     public void menuTesting(){
         MenuBarPage menubartesting = PageFactory.initElements(driver,MenuBarPage.class);
+        menubartesting.closingpopup();
         menubartesting.MenuBarElements();
     }
 
