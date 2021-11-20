@@ -19,7 +19,13 @@ public class MenuDropDownTest extends CommonAPI {
 
     }
 
+        @Test
+        public void MenuDropDownTextTest(){
+            MenuDropDownPage MenuDropDownTest = PageFactory.initElements(driver, MenuDropDownPage.class);
+            MenuDropDownTest.gettingtextfromdropdown();
 
+
+        }
 
 
 

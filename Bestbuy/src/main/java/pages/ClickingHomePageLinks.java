@@ -12,12 +12,12 @@ public class ClickingHomePageLinks extends CommonAPI {
     WebElement goodtiding; //pop up element
 
 
-    @FindBy(linkText = "Apple")
+    @FindBy(xpath = "//*[@id=\"widget-455bae9a-c219-4271-b804-294e5139a37f\"]/div/div[3]/div[3]/a")
     WebElement Apple;       //clicking apple on homepage
 
 
 
-    @FindBy(linkText = "Laptops & Computers")
+    @FindBy(xpath = "//img[@alt='Laptops & Computers']")
     WebElement Laptop_Computers;
 
     @FindBy(partialLinkText = "Video Games, Consoles")
@@ -25,7 +25,6 @@ public class ClickingHomePageLinks extends CommonAPI {
 
 
 //====================GETTER  METHODS ====================
-
 
 
 
@@ -55,8 +54,9 @@ public class ClickingHomePageLinks extends CommonAPI {
 
 
 
-    // pop up cancel
+     //pop up cancel
     public void closingpopup(){
+        waitUntilVisible(getGoodtiding());
         clickOn(getGoodtiding());
     }
 

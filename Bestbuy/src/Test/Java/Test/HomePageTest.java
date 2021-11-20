@@ -16,6 +16,5 @@ public class HomePageTest extends CommonAPI {
         public void Printing_Text_Homepage(){
             String titles = driver.getCurrentUrl();
             Assert.assertEquals("https://www.bestbuy.com/", titles);
-
         }
 }

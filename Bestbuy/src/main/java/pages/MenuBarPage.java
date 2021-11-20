@@ -57,51 +57,31 @@ public class MenuBarPage extends CommonAPI {
     public WebElement getBest_Buy_Tooltech() {
         return Best_Buy_Tooltech;
     }
-
+//done
     public WebElement getHealth_Wellness() {
         return Health_Wellness;
     }
-
+//done
     public WebElement getCredit_Card() {
         return Credit_Card;
     }
-
-
-
         public void getting_All_Text(){
         text_for_Elements(getDeal_of_the_day());
         text_for_Elements(getBest_Buy_Tooltech());
         text_for_Elements(getTop_Deals());
         text_for_Elements(getCredit_Card());
+
 }
-
-
-
-
     public WebElement getGoodtiding() {
         return goodtiding;
     }
-
     public List<WebElement> getMenuBar() {
         return MenuBar;
     }
-
-
-
-
-
     // pop up cancel
     public void closingpopup(){
         clickOn(getGoodtiding());
     }
-
-
-
-
-
-
-
-
     //not done yet include click function dont know
     public List<String> MenuBarElements(){
         List <String> lists = new ArrayList<>();
@@ -109,13 +89,7 @@ public class MenuBarPage extends CommonAPI {
         for (WebElement element : Elements) {
 
             lists.add(element.getText());
-
-
         }
         return lists;
     }
-
-
-
-
 }

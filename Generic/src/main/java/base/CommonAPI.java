@@ -37,8 +37,8 @@ import java.util.concurrent.TimeUnit;
 
 public class CommonAPI {
     public WebDriver driver = null;
-    public String browserstack_username = "nacerhadjsaid1";
-    public String browserstack_accesskey = "pK4miZ8sp15afqsvGckE";
+    public String browserstack_username = "";
+    public String browserstack_accesskey = "";
     public String saucelabs_username = "";
     public String saucelabs_accesskey = "";
     boolean flag = false;
@@ -104,7 +104,7 @@ public class CommonAPI {
     @BeforeMethod
     public void setUp(@Optional("false") boolean useCloudEnv, @Optional("false") String cloudEnvName,
                       @Optional("OS X") String os, @Optional("10") String os_version, @Optional("chrome") String browserName, @Optional("34")
-                              String browserVersion, @Optional("https://www.facebook.com") String url) throws IOException {
+                              String browserVersion, @Optional("https://www.bestbuy.com") String url) throws IOException {
 
         if (useCloudEnv == true) {
             if (cloudEnvName.equalsIgnoreCase("browserstack")) {
@@ -212,17 +212,15 @@ public class CommonAPI {
         element.sendKeys(str, Keys.ENTER);
 
     }
-<<<<<<< HEAD
 
 
 
 
-    public void Enter(WebElement element){
+
+    public void Enter(WebElement element) {
         element.sendKeys(Keys.ENTER);
 
     }
-=======
->>>>>>> 55e1c7a300a51e09d77b26a2958d7ae67263dfcb
     public void selectDropdownElement(WebElement element, String value){
         Select sel = new Select(element);
         try {
@@ -273,7 +271,7 @@ public class CommonAPI {
     public void navigateToHomeWindow(){
         driver.switchTo().defaultContent();
     }
-    public String getWebElementText(WebElement element){
+    public String gettWebElementText(WebElement element){
         String st = element.getText();
         return st;
     }
@@ -283,16 +281,14 @@ public class CommonAPI {
     }
 
 
-    public List<String> getTextFromListOfWebElements(List<WebElement> list) {
+    public List<String> TextFromListOfWebElements(List<WebElement> list) {
         List<String> items = new ArrayList<String>();
         for (WebElement element : list) {
             items.add(element.getText());
+            System.out.println(element);
         }
         return items;
     }
-
-
-
     public void okAlert(){
         Alert alert = driver.switchTo().alert();
         alert.accept();

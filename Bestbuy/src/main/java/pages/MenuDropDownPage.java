@@ -17,12 +17,14 @@ public class MenuDropDownPage extends CommonAPI {
     WebElement goodtiding; //exit popup
 
 
-    @FindBy(xpath = "//button[@aria-label='Menu']")
+    @FindBy(partialLinkText= "Menu")
    WebElement clickingMenu;
 
 
-    @FindBy(className = "liDropdownList")
+    @FindBy(className = "hamburger-menu-flyout-list")
     WebElement Menudropdownlist; //all the items in the menu
+
+
 
 
 
@@ -59,17 +61,16 @@ public class MenuDropDownPage extends CommonAPI {
 
 
 
-    public void gettingtextfromdropdoqn(){
-
-        getWebElementText(getMenudropdownlist());
-
-        }
-
+    public void gettingtextfromdropdown(){
+        closingpopup();
+        clickingmenuicon();
+        text_for_Elements(getMenudropdownlist());
 
 
+    }
         public void SelectingMultipleList(){
 
-            getWebElementText(getMenudropdownlist());
+
 
         }
 

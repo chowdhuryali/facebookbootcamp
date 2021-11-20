@@ -3,20 +3,19 @@ package Test;
 import base.CommonAPI;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
-import pages.MenuDropDownPage;
 import pages.searchingbrowser;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class SearchBard extends CommonAPI {
+public class SearchBarTest extends CommonAPI {
 
 
 
     @Test
     public void searchingSamsungTVTest(){
         searchingbrowser search = PageFactory.initElements(driver, searchingbrowser.class);
-       search.clickOn(search.getGoodtiding());
+      // search.clickOn(search.getGoodtiding());
         search.searchItem("samsung tv");
         waitFor(5);
 
@@ -40,7 +39,7 @@ public class SearchBard extends CommonAPI {
     @Test
     public void searchItems(){
         searchingbrowser search = PageFactory.initElements(driver, searchingbrowser.class);
-        search.closingpopup();
+       // search.closingpopup();
         List<String> searching = new ArrayList<>();
         searching.add("PS5");
         searching.add("Macbook Pro");

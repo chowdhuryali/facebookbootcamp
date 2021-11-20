@@ -23,7 +23,11 @@
     <test name = "smoke Amazon search">
         <classes>
 
-            <class name="Test.BestBuyTesting"/>
+            <class name="Test.HomePageLinkTest"/>
+            <class name="Test.HomePageTest"/>
+            <class name="Test.MenuBarTest"/>
+            <class name="Test.SearchBarTest"/>
+            <class name="Test.LogInTest"/>
         </classes>
     </test>
 </suite>

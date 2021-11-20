@@ -6,13 +6,18 @@ import org.testng.annotations.Test;
 import pages.MenuBarPage;
 public class MenuBarTest extends CommonAPI {
 
+    @Test
+    public void menuTesting(){
+        MenuBarPage menubartesting = PageFactory.initElements(driver,MenuBarPage.class);
+        menubartesting.MenuBarElements();
+    }
 
 
 
     @Test
     public void MenuElements(){
        MenuBarPage MenuBar = PageFactory.initElements(driver, MenuBarPage.class);
-       MenuBar.closingpopup();
+      MenuBar.closingpopup();
       MenuBar.getting_All_Text();
 
     }
