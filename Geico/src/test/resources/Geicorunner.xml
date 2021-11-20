@@ -13,6 +13,7 @@
     <test name = "smoke Testing Geico">
         <classes>
             <class name="testfunctions.TestAccountLogin"/>
+            <class name="testfunctions.TestChatBot"/>
             <class name="testfunctions.TestGeicoCommercial"/>
             <class name="testfunctions.TestGetID"/>
             <class name="testfunctions.TestGetQuote"/>
