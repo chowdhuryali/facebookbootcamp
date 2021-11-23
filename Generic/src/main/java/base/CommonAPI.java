@@ -170,10 +170,6 @@ public class CommonAPI {
         driver.quit();
     }
 
-    public void alisendkey(String locator, String input){
-        driver.findElement(By.xpath(locator)).sendKeys(input);
-    }
-
     public void typeAndEnter(String locator, String input){
         try {
             driver.findElement(By.cssSelector(locator)).sendKeys(input, Keys.ENTER);

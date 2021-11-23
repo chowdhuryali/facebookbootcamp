@@ -12,6 +12,7 @@
         <module name="Ebay" />
         <module name="Generic" />
         <module name="Amazon" />
+        <module name="FB" />
         <module name="Bestbuy" />
         <module name="Facebook" />
         <module name="Geico" />

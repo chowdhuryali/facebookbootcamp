@@ -9,35 +9,50 @@ public class HomePage extends CommonAPI {
     @FindBy(xpath = "//a[@title='Sign Up for Facebook']")
     WebElement signup;
 
-    @FindBy(xpath = "//input[@name='firstname']")
-    WebElement firstname;
-
-    @FindBy(xpath = "//input[@name='lastname']")
-    WebElement lastname;
-
-    @FindBy(xpath = "//input[@name='reg_email__']")
-    WebElement email;
-
-    @FindBy(xpath = "//input[@name='reg_email_confirmation__']")
-    WebElement confirmemail;
-
-    @FindBy(xpath = "//input[@name='reg_passwd__']")
-    WebElement password;
-
-    @FindBy(xpath = "//select[@name='birthday_month']")
-    WebElement birthdaymonth;
-
-    @FindBy(xpath = "//select[@name='birthday_day']")
-    WebElement birthdayday;
-
-    @FindBy(xpath = "//select[@name='birthday_year']")
-    WebElement birthdayyear;
-
-    @FindBy(xpath = "//input[@value='2']")
-    WebElement gender;
-
     @FindBy (xpath = "//a[@title='Browse our Watch videos.']")
     WebElement Watch;
+
+    @FindBy (xpath = "//a[@title='Buy and sell on Facebook Marketplace.']")
+    WebElement marketplace;
+
+    @FindBy (xpath = "//a[@title='Check out Facebook games.']")
+    WebElement Games;
+
+    @FindBy (xpath = "//a[@title='Check out popular places on Facebook.']")
+    WebElement Places;
+
+    @FindBy (xpath = "//a[@title='Explore our Groups.']")
+    WebElement Groups;
+
+    @FindBy (xpath = "//a[@title='Apply for jobs and hire on Facebook.']")
+    WebElement Jobs;
+
+    @FindBy (xpath = "//a[@title='Donate to worthy causes.']")
+    WebElement Fundraisers;
+
+    public WebElement getFundraisers() {
+        return Fundraisers;
+    }
+
+    public WebElement getJobs() {
+        return Jobs;
+    }
+
+    public WebElement getGroups() {
+        return Groups;
+    }
+
+    public WebElement getPlaces() {
+        return Places;
+    }
+
+    public WebElement getGames() {
+        return Games;
+    }
+
+    public WebElement getMarketplace() {
+        return marketplace;
+    }
 
     public WebElement getWatch() {
         return Watch;
@@ -47,65 +62,24 @@ public class HomePage extends CommonAPI {
         return signup;
     }
 
-    public WebElement getFirstname() {
-        return firstname;
-    }
 
-    public WebElement getLastname() {
-        return lastname;
-    }
-
-    public WebElement getEmail() {
-        return email;
-    }
-
-    public WebElement getConfirmemail() {
-        return confirmemail;
-    }
-
-    public WebElement getPassword() {
-        return password;
-    }
-
-    public WebElement getBirthdaymonth() {
-        return birthdaymonth;
-    }
-
-    public WebElement getBirthdayday() {
-        return birthdayday;
-    }
-
-    public WebElement getBirthdayyear() {
-        return birthdayyear;
-    }
-
-    public WebElement getGender() {
-        return gender;
-    }
-
-    public void signup() {
-        clickOn(getSignup());
-        waitFor(2);
-        typeInto(getFirstname(), "Ali");
-        waitFor(2);
-        typeInto(getLastname(), "Chowdhury");
-        waitFor(2);
-        typeInto(getEmail(), "alichy123@gmail.com");
-        waitFor(2);
-        typeInto(getConfirmemail(), "alichy123@gmail.com");
-        waitFor(2);
-        typeInto(getPassword(), "password");
-        waitFor(2);
-        selectDropdownElement(getBirthdaymonth(), "Jun");
-        waitFor(2);
-        selectDropdownElement(getBirthdayday(), "11");
-        waitFor(2);
-        selectDropdownElement(getBirthdayyear(), "1985");
-        clickOn(getGender());
-        waitFor(2);
-    }
+    public void signup() {clickOn(getSignup());}
 
     public void watch(){
         clickOn(getWatch());
     }
+
+    public void MarketPlace(){clickOn(getMarketplace());}
+
+    public void Games(){clickOn(getGames());}
+
+    public void Places(){clickOn(getPlaces());}
+
+    public void Groups(){clickOn(getGroups());}
+
+    public void Jobs(){clickOn(getJobs());}
+
+    public void Fundraiser(){clickOn(getFundraisers());}
+
+
 }
