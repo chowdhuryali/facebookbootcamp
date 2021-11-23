@@ -15,5 +15,7 @@ public class SignupTests extends CommonAPI {
             homePage.signup();
             signupPage.signup();
 
+//            test message
+
         }
     }
