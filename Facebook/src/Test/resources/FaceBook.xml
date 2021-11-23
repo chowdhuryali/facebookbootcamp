@@ -8,7 +8,7 @@
         <classes>
             <class name="SignupTests"/>
             <class name="WatchPageTests"/>
-            <class name="MarketPlacePageTest"/>
+            <class name="MarketPlacePageTests"/>
             <class name="GamesPageTests"/>
             <class name="PlacesPageTests"/>
             <class name="JobsPageTests"/>
