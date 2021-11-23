@@ -8,7 +8,7 @@
         <classes>
             <class name="SignupFunction"/>
             <class name="WatchPageFunction"/>
-        </classes>
+        </classes
     </test>
 
 </suite>
